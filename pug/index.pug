@@ -1,0 +1,11 @@
+extends ../template/template.pug
+
+append head
+    title #{title__page}
+    meta(name = "viewport" content = "width = device-width initial-scale = 1.0")
+    meta(name="author" content = "Tiago José")
+    meta(name="keywords" content= "Portfolio HTML5 CSS3")
+    meta(name = "description" content = "Consolidar um portfólio próprio")
+    each link in css
+        link(rel="stylesheet", href="../css/" + link + ".css")
+

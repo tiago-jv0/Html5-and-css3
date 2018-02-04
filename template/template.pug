@@ -1,0 +1,81 @@
+doctype html
+html
+    head
+        block head
+            include ../configs/config.pug
+            meta(charset = "utf-8")
+    body
+        block menu
+        header
+            nav
+                h1 Lorem Ipsum
+                ul
+                    each item_menu in menu_itens
+                        if item_menu == "Home"
+                            li: a(href = "/") #{item_menu}
+                        else
+                            li: a(href= "#" + item_menu) #{item_menu}
+        section
+            article.container__principal
+                    h1 Lorem Ipsum
+                    p  Testando o site
+                    
+                    a(href="#About") Ver mais
+            article.about#About
+                    h1 Sobre
+
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis exercitationem officiis.
+
+                    a(href="#Contact") Entre em Contato
+        section.servicos
+                h1 Serviços
+                article
+                    .integracao
+                        img(src="../imagens/configs.png", alt="Configurações")
+
+                        h2 Facil Integração
+
+                        p   Integra facilmente seu site a qualquer gerenciador de conteúdo.
+                    .hospedagem
+                        img(src="../imagens/hospedagem.png", alt="Hospedagem")
+
+                        h2 Hospedagem Moderna
+
+                        p   Não deixe seus clientes na mão. Tenha seu site 24hrs no ar.
+                    .praticas
+                        img(src="../imagens/site.png", alt="Site")
+
+                        h2 Melhores Práticas
+
+                        p Código legível, desenvolvido com as melhores práticas.
+                    .amor
+                        img(src="../imagens/coracao.png", alt="Coração")
+                        
+                        h2 Feito com amor
+
+                        p É melhor fazer seus sites com amor hoje em dia!
+        section
+            article.portfolio#Portfolio
+                h1 Portfólio
+                .imagens
+                    each number in ["1" , "2" , "3" , "4" , "5" , "6"]
+                        if number == "1" || number == "4"
+                            img(src="../imagens/portfolio-" + number + ".jpg", alt="Fotografia")
+                        else
+                            img(src="../imagens/portfolio-" + number + ".jpeg", alt="Fotografia")
+        section
+            article.contato#Contact
+                h1 Contato
+
+                p Fale conosco
+
+                a: img(src="../imagens/fone.png", alt="Fone de Contato")
+                p: a(href="#") 996895869
+
+                a: img(src="../imagens/contato.png", alt="Email de Contato")
+                p: a(href="#") lorremipsum@kkk.com
+        footer
+            p Desenvolvido por Tiago José
+
+
+                
