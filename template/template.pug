@@ -12,7 +12,7 @@ html
                 ul
                     each item_menu in menu_itens
                         if item_menu == "Home"
-                            li: a(href = "/") #{item_menu}
+                            li: a(href = "#") #{item_menu}
                         else
                             li: a(href= "#" + item_menu) #{item_menu}
         section

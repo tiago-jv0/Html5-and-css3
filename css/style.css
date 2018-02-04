@@ -44,8 +44,14 @@ nav {
         width: 100%;
         text-decoration: none;
         color: #f1f1f1;
-        padding: 0.5em; }
+        padding: 0.5em;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s; }
         nav ul li a:hover {
+          -webkit-transition: 1s;
+          -o-transition: 1s;
+          transition: 1s;
           background-color: rgba(0, 0, 0, 0.8); }
 
 section {
@@ -235,7 +241,6 @@ footer {
 
 @media screen and (min-width: 700px) {
   nav {
-    position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -262,9 +267,14 @@ footer {
       -ms-flex-direction: row;
       flex-direction: row; }
       nav ul li {
-        line-height: 10vh; }
+        line-height: 7vh; }
   section .container__principal {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     height: 100vh; }
+    section .container__principal a {
+      padding: 2em 4em;
+      font-size: 1em; }
   .servicos > article {
     display: -webkit-box;
     display: -ms-flexbox;
