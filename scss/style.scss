@@ -221,12 +221,13 @@ footer {
 @media screen and (min-width : 700px){
 
     nav {
+        position: fixed;
         display: flex;
         flex-direction: row;
         width: 100%;
         justify-content: space-around;
         flex-wrap: nowrap;
-        height: 30vh;
+        height: 10vh;
         h1 {
             align-self: center;
         }
@@ -237,8 +238,15 @@ footer {
             flex-direction: row;
 
             li {
-                line-height: 30vh;
+                line-height: 10vh;
             }
+        }
+    }
+
+    section {
+        .container__principal {
+            height: 100vh;
+            
         }
     }
 
