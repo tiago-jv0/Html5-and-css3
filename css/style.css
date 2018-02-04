@@ -182,7 +182,7 @@ section {
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(0, 0, 0, 0.8); }
   .portfolio img {
-    max-width: 375px;
+    max-width: 100%;
     margin: 0; }
   .portfolio .imagens {
     display: -webkit-box;
@@ -222,7 +222,6 @@ section {
     padding: 1em;
     margin: 1em; }
   .contato .number, .contato .email {
-    width: 100%;
     text-align: center; }
 
 footer {
@@ -275,6 +274,8 @@ footer {
     section .container__principal a {
       padding: 2em 4em;
       font-size: 1em; }
+  .portfolio img {
+    max-width: 40%; }
   .servicos > article {
     display: -webkit-box;
     display: -ms-flexbox;

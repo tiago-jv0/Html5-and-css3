@@ -168,7 +168,7 @@ section {
     }
 
     img {
-        max-width: 375px;
+        max-width: 100%;
         margin:0;
     }
 
@@ -201,7 +201,7 @@ section {
     }
 
     .number , .email {
-        width: 100%;
+        
         text-align: center;
     }
 
@@ -254,6 +254,12 @@ footer {
         }
     }
 
+    .portfolio {
+        img{
+            max-width:40%;
+        }
+    }
+
     .servicos > article {
         display: flex;
         flex-direction: row;
@@ -273,6 +279,4 @@ footer {
             justify-content: center;
         }
     }
-
-    
 }
