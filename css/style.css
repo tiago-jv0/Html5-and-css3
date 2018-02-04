@@ -132,6 +132,11 @@ section {
   -ms-flex-align: center;
   align-items: center;
   width: 100%; }
+  .servicos h1 {
+    color: rgba(0, 0, 0, 0.8);
+    padding-top: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em; }
   .servicos .integracao, .servicos .praticas, .servicos .amor, .servicos .hospedagem {
     margin: 2em 0;
     display: -webkit-box;
@@ -144,6 +149,16 @@ section {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+    .servicos .integracao h2, .servicos .praticas h2, .servicos .amor h2, .servicos .hospedagem h2 {
+      color: rgba(0, 0, 0, 0.8);
+      margin-top: 1.2em;
+      font-size: 1em;
+      font-family: Arial, Helvetica, sans-serif; }
+    .servicos .integracao p, .servicos .praticas p, .servicos .amor p, .servicos .hospedagem p {
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+      font-size: 1em;
+      padding: 1em; }
 
 .portfolio {
   display: -webkit-box;
@@ -154,7 +169,10 @@ section {
   .portfolio h1 {
     width: 100%;
     text-align: center;
-    font-size: 2em; }
+    font-size: 1.6em;
+    padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.8); }
   .portfolio img {
     max-width: 375px;
     margin: 0; }
