@@ -194,27 +194,28 @@ section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .contato h1 {
-    margin: 1em 0;
-    width: 100%;
-    text-align: center; }
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 1em;
+    font-size: 1.5em; }
   .contato p {
-    margin: 1em 0;
-    width: 100%;
-    text-align: center; }
-  .contato a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-  .contato img {
-    max-width: 400px; }
+    text-align: center;
+    padding: 1em;
+    margin: 1.3em; }
+  .contato p > a {
+    text-decoration: none;
+    padding: 0.6em;
+    background-color: #6f5b81;
+    color: white; }
 
 footer {
   color: white;
@@ -228,4 +229,14 @@ footer {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: darkslategray; }
+  background-color: rgba(27, 26, 27, 0.8); }
+
+@media screen and (min-width: 700px) {
+  .servicos > article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; } }
