@@ -270,7 +270,8 @@ footer {
   section .container__principal {
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    height: 100vh; }
+    height: 90vh;
+    background-position: 50%; }
     section .container__principal a {
       padding: 2em 4em;
       font-size: 1em; }
